@@ -14,179 +14,178 @@
 </head>
 
 <body>
-    <nav class="navbar bg-body-tertiary fixed-top p-0">
-        <div class="container-fluid navbarContainer">
-            <div style="display: flex;">
-                <a class="navbar-brand nameLogo" href="#" style="color: antiquewhite;">EcoTasty</a>
-                <img src="./media/photos/logo_recorded.png" class="imgLogo" alt="">
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top p-0">
+            <div class="container-fluid navbarContainer">
+                <div style="display: flex;">
+                    <a class="navbar-brand nameLogo" href="#" style="color: antiquewhite;">EcoTasty</a>
+                    <img src="./media/photos/logo_recorded.png" class="imgLogo" alt="">
+                </div>
+    
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Noticias</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Preguntas</a>
+                            </li>
+    
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Contáctenos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Whatsapp</a></li>
+                                    <li><a class="dropdown-item" href="#">Facebook</a></li>
+                                    <li><a class="dropdown-item" href="#">Instagram</a></li>
+                                    <li><a class="dropdown-item" href="#">TikTok</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+        </nav>
+    
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./media/photos/portada1.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/photos/portada2.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./media/photos/portada3.jpg" class="d-block w-50" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Noticias</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Preguntas</a>
-                        </li>
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Contáctenos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Whatsapp</a></li>
-                                <li><a class="dropdown-item" href="#">Facebook</a></li>
-                                <li><a class="dropdown-item" href="#">Instagram</a></li>
-                                <li><a class="dropdown-item" href="#">TikTok</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div id="carouselExampleFade" class="carousel slide carousel-fade carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./media/photos/portada1.jpg" class="d-block w-50" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/photos/portada2.jpg" class="d-block w-50" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/photos/portada3.jpg" class="d-block w-50" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="nosotros">
-        <h2 class="title">Nosotros</h2>
-
-        <div class="nostrosContainer">
-
-            <img src="./media/photos/nosotros.jpg" alt="">
-
-            <p>
-                Descubre la revolución en utensilios con nuestra línea innovadora: cubiertos y platos biodegradables
-                que, al finalizar su uso, <span>¡se convierten en un delicioso snack!</span> Elaborados con ingredientes
-                naturales y sostenibles, nuestros utensilios comestibles no solo facilitan tus comidas, sino que también
-                eliminan residuos y ofrecen una experiencia culinaria única y eco-consciente.
-            </p>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-
-        <div class="mision">
-
-            <div class="subText">
-                <h2 class="title">Mision</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus laudantium adipisci doloremque
-                    minus nam quos suscipit labore architecto mollitia unde.</p>
-            </div>
-
-            <div class="subImg">
+        <div class="nosotros">
+            <h2 class="title">Nosotros</h2>
+    
+            <div class="nostrosContainer">
+    
                 <img src="./media/photos/nosotros.jpg" alt="">
+    
+                <p>
+                    Descubre la revolución en utensilios con nuestra línea innovadora: cubiertos y platos biodegradables
+                    que, al finalizar su uso, <span>¡se convierten en un delicioso snack!</span> Elaborados con ingredientes
+                    naturales y sostenibles, nuestros utensilios comestibles no solo facilitan tus comidas, sino que también
+                    eliminan residuos y ofrecen una experiencia culinaria única y eco-consciente.
+                </p>
             </div>
+    
+    
+            <div class="mision">
+    
+                <div class="subText">
+                    <h2 class="title">Mision</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus laudantium adipisci doloremque
+                        minus nam quos suscipit labore architecto mollitia unde.</p>
+                </div>
+    
+                <div class="subImg">
+                    <img src="./media/photos/nosotros.jpg" alt="">
+                </div>
+            </div>
+    
+    
+            <div class="vision">
+    
+                <div class="subImg">
+                    <img src="./media/photos/nosotros.jpg" alt="">
+                </div>
+    
+                <div class="subText">
+                    <h2 class="title">Vision</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur fugiat quaerat alias
+                        laudantium, hic aut consectetur minus nostrum ea?</p>
+                </div>
+            </div>
+    
+            <h2 class="title">¿Por qué elegir EcoTasty? </h2>
+    
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title subTitle">Sostenibilidad</h5>
+                            <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
+                                additional content.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title subTitle">Innovación</h5>
+                            <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
+                                additional content.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div style="height: 20px;">
+    
+                </div>
+    
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title subTitle">Responsabilidad Social</h5>
+                            <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
+                                additional content.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title subTitle">Diversión y placer</h5>
+                            <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
+                                additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
         </div>
-
-
-        <div class="vision">
-
-            <div class="subImg">
-                <img src="./media/photos/nosotros.jpg" alt="">
-            </div>
-
-            <div class="subText">
-                <h2 class="title">Vision</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam pariatur fugiat quaerat alias
-                    laudantium, hic aut consectetur minus nostrum ea?</p>
-            </div>
-        </div>
-
-        <h2 class="title">¿Por qué elegir EcoTasty? </h2>
-
-        <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title subTitle">Sostenibilidad</h5>
-                        <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title subTitle">Innovación</h5>
-                        <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="height: 20px;">
-
-            </div>
-
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title subTitle">Responsabilidad Social</h5>
-                        <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title subTitle">Diversión y placer</h5>
-                        <p class="card-text subTitleDescription">With supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    </header>
 
     <main>
-
-
-
         <div class="envases">
             <h2 class="title">Personaliza tus envases</h2>
         </div>
@@ -196,9 +195,19 @@
 
             <div class="cardContainer">
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="./media/photos/vasosHelado.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title" style="text-align: center;">Tazas</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="./media/photos/plato.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Platos</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -206,48 +215,16 @@
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="./media/photos/cuchara.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title" style="text-align: center;">Cubiertos</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
 
             </div>
-
 
         </div>
 
@@ -277,8 +254,13 @@
         <footer>
 
         </footer>
+   
+   
     </main>
 
+    <footer>
+
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
